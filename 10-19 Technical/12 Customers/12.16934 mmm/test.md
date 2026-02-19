@@ -9,7 +9,13 @@ ___mb_schema: /.mattrbld/schemas/documentation.json
 ---
 ## Issue
 
+!\[\](/00-09 Meta/09 Source/imgs/losing-my-mind-insane.gif)
+
+!\[\](/00-09 Meta/09 Source/imgs/vard-dawg-the-datavard-aardvark-1.png)
+
 When attempting to clone the template VM, it fails with something like:
+
+\[\[Another Document\]\]
 
 ```
 create full clone of drive scsi0 (iscsi-lvm:vm-105-disk-0) device-mapper: create ioctl on iscsi-vm--122--disk--0 failed: Device or resource busy
@@ -20,11 +26,11 @@ TASK ERROR: clone failed: lvcreate 'iscsi/vm-122-disk-0' error:   Failed to acti
 
 This is because when a previous VM using that vmid was deleted, a bug occured and the lvm was not properly purged from the iscsi datastore. This can be verified by running the following on one of the Proxmox nodes, where `$VMID` is the vmid you are trying to use:
 
-```
+```bash
 sudo dmsetup table | grep $VMID
 ```
 
-```
+```bash
 iscsi-vm--122--disk--0: 0 41943040 linear 8:16 9776930816
 ```
 
@@ -36,7 +42,7 @@ Quote from one of the Proxmox staff members about there likely being a bug that 
 
 **FIRST** Verify the disk isnt in use by any other vms:
 
-```
+```bash
 sudo grep -R "vm-$VMID-disk-0" /etc/pve
 ```
 
@@ -44,13 +50,13 @@ This should return empty
 
 Then, the LV can be removed by just running:
 
-```
+```bash
 sudo dmsetup remove iscsi-vm--$VMID--disk--0
 ```
 
 Verify it got removed:
 
-```
+```bash
 sudo dmsetup table | grep $VMID
 ```
 

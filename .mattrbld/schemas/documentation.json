@@ -159,7 +159,8 @@
               "strong",
               "link",
               "code",
-              "strike"
+              "strike",
+              "br"
             ],
             "formatOptions": [
               "allowQuoteFooters",
