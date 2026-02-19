@@ -1,167 +1,227 @@
 {
   "fields": [
     {
-      "type": "tags",
-      "default": null,
-      "icon": "tags",
-      "key": "tags",
-      "label": "Tags",
-      "localised": false,
+      "type": "container",
+      "icon": "placeholder",
+      "key": "___mb_visual_container",
+      "label": "Properties",
       "options": {
-        "allowUnsuggested": true,
-        "autocompleteModel": []
+        "collapsible": false,
+        "collapseByDefault": false,
+        "row": false,
+        "bordered": false
       },
       "tab": "Main",
-      "validation": {
-        "max": null,
-        "min": null,
-        "unit": "tags"
-      },
-      "value": null,
+      "value": [
+        {
+          "type": "tags",
+          "default": null,
+          "icon": "tags",
+          "key": "tags",
+          "label": "Tags",
+          "localised": false,
+          "options": {
+            "allowUnsuggested": true,
+            "autocompleteModel": []
+          },
+          "tab": "Main",
+          "validation": {
+            "max": null,
+            "min": null,
+            "unit": "tags"
+          },
+          "value": null,
+          "version": 1,
+          "visibility": {
+            "hidden": false,
+            "showByValue": {
+              "field": null
+            }
+          }
+        },
+        {
+          "type": "select",
+          "default": "Rough Draft",
+          "icon": "dropdown",
+          "key": "status",
+          "label": "Status",
+          "options": {
+            "filterable": false,
+            "removable": false,
+            "placeholder": "Select a value…",
+            "options": [
+              "Rough Draft",
+              "Needs Work",
+              "Done"
+            ]
+          },
+          "tab": "Main",
+          "validation": {
+            "required": false
+          },
+          "value": null,
+          "version": 1,
+          "visibility": {
+            "hidden": false,
+            "showByValue": {
+              "field": null
+            }
+          }
+        },
+        {
+          "type": "date",
+          "default": null,
+          "icon": "calendar",
+          "key": "last-modified",
+          "label": "Last Modified",
+          "options": {
+            "outputFormat": "iso",
+            "removable": false,
+            "showTime": true,
+            "defaultToNow": true,
+            "useAsUpdatedAt": false,
+            "only": null
+          },
+          "tab": "Main",
+          "validation": {
+            "max": null,
+            "min": null,
+            "required": false,
+            "unit": "date",
+            "isString": true
+          },
+          "value": null,
+          "version": 2,
+          "visibility": {
+            "hidden": false,
+            "showByValue": {
+              "field": null
+            }
+          }
+        },
+        {
+          "type": "separator",
+          "icon": "add-separator",
+          "key": "___mb_visual_separator",
+          "label": "Separator",
+          "tab": "Main",
+          "version": 2,
+          "visibility": {
+            "showByValue": {
+              "field": null
+            }
+          },
+          "visualOnly": true
+        }
+      ],
       "version": 1,
       "visibility": {
         "hidden": false,
         "showByValue": {
           "field": null
         }
-      }
+      },
+      "visualOnly": true
     },
     {
-      "type": "select",
-      "default": "Rough Draft",
-      "icon": "dropdown",
-      "key": "status",
-      "label": "Status",
-      "options": {
-        "filterable": false,
-        "removable": false,
-        "placeholder": "Select a value…",
-        "options": [
-          "Rough Draft",
-          "Needs Work",
-          "Done"
-        ]
-      },
-      "tab": "Main",
-      "validation": {
-        "required": false
-      },
-      "value": null,
-      "version": 1,
-      "visibility": {
-        "hidden": false,
-        "showByValue": {
-          "field": null
-        }
-      }
-    },
-    {
-      "type": "date",
-      "default": null,
-      "icon": "calendar",
-      "key": "last-modified",
-      "label": "Last Modified",
-      "options": {
-        "outputFormat": "iso",
-        "removable": false,
-        "showTime": true,
-        "defaultToNow": true,
-        "useAsUpdatedAt": false,
-        "only": null
-      },
-      "tab": "Main",
-      "validation": {
-        "max": null,
-        "min": null,
-        "required": false,
-        "unit": "date",
-        "isString": true
-      },
-      "value": null,
-      "version": 2,
-      "visibility": {
-        "hidden": false,
-        "showByValue": {
-          "field": null
-        }
-      }
-    },
-    {
-      "type": "rich text",
-      "default": null,
-      "icon": "text",
-      "key": "rich-text",
+      "type": "container",
+      "icon": "placeholder",
+      "key": "___mb_visual_container-1",
       "label": "Content",
-      "localised": false,
       "options": {
-        "outputFormat": "markdown",
-        "blockFormats": [
-          "blockquote",
-          "heading",
-          "hr",
-          "orderedList",
-          "unorderedList",
-          "image",
-          "codeBlock"
-        ],
-        "inlineFormats": [
-          "em",
-          "strong",
-          "link",
-          "code",
-          "strike",
-          "br"
-        ],
-        "formatOptions": [
-          "allowQuoteFooters",
-          "allowNestedLists",
-          "allowImageCaptions"
-        ],
-        "inputRuleOptions": [
-          "autoquotes",
-          "dashes",
-          "ellipsis",
-          "noDoubleCaps",
-          "noDoubleSpace"
-        ],
-        "minHeading": 2,
-        "maxHeading": 4,
-        "codeLangs": [
-          "html",
-          "css",
-          "javascript",
-          "markdown",
-          "python",
-          "golang",
-          "bash"
-        ],
-        "allowRaw": true,
-        "urlTemplate": "",
-        "urlSuffix": "",
-        "linkOptions": [
-          "forceBlankTarget",
-          "allowExternal",
-          "allowInternal"
-        ]
+        "collapsible": false,
+        "collapseByDefault": false,
+        "row": false,
+        "bordered": false
       },
       "tab": "Main",
-      "validation": {
-        "enforceMinMax": true,
-        "max": null,
-        "min": null,
-        "regex": null,
-        "regexError": null,
-        "required": false,
-        "unit": "length"
-      },
-      "value": null,
+      "value": [
+        {
+          "type": "rich text",
+          "default": null,
+          "icon": "text",
+          "key": "content",
+          "label": "Body",
+          "localised": false,
+          "options": {
+            "outputFormat": "markdown",
+            "blockFormats": [
+              "blockquote",
+              "heading",
+              "hr",
+              "orderedList",
+              "unorderedList",
+              "image",
+              "codeBlock"
+            ],
+            "inlineFormats": [
+              "em",
+              "strong",
+              "link",
+              "code",
+              "strike"
+            ],
+            "formatOptions": [
+              "allowQuoteFooters",
+              "allowNestedLists",
+              "allowImageCaptions"
+            ],
+            "inputRuleOptions": [
+              "autoquotes",
+              "dashes",
+              "ellipsis",
+              "noDoubleCaps",
+              "noDoubleSpace"
+            ],
+            "minHeading": 2,
+            "maxHeading": 5,
+            "codeLangs": [
+              "html",
+              "css",
+              "javascript",
+              "markdown",
+              "python",
+              "golang",
+              "powershell",
+              "bash"
+            ],
+            "allowRaw": true,
+            "urlTemplate": "",
+            "urlSuffix": "",
+            "linkOptions": [
+              "forceBlankTarget",
+              "allowExternal",
+              "allowInternal"
+            ]
+          },
+          "tab": "Main",
+          "validation": {
+            "enforceMinMax": true,
+            "max": null,
+            "min": null,
+            "regex": null,
+            "regexError": null,
+            "required": false,
+            "unit": "length"
+          },
+          "value": null,
+          "version": 1,
+          "visibility": {
+            "hidden": false,
+            "showByValue": {
+              "field": null
+            }
+          }
+        }
+      ],
       "version": 1,
       "visibility": {
         "hidden": false,
         "showByValue": {
           "field": null
         }
-      }
+      },
+      "visualOnly": true
     }
   ],
   "tabs": [
