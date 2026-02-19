@@ -158,9 +158,9 @@
               "em",
               "strong",
               "link",
+              "br",
               "code",
-              "strike",
-              "br"
+              "strike"
             ],
             "formatOptions": [
               "allowQuoteFooters",
@@ -175,7 +175,7 @@
               "noDoubleSpace"
             ],
             "minHeading": 2,
-            "maxHeading": 5,
+            "maxHeading": 4,
             "codeLangs": [
               "html",
               "css",
@@ -183,8 +183,8 @@
               "markdown",
               "python",
               "golang",
-              "powershell",
-              "bash"
+              "bash",
+              "powershell"
             ],
             "allowRaw": true,
             "urlTemplate": "",

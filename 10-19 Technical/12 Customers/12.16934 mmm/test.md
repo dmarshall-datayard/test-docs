@@ -9,13 +9,13 @@ ___mb_schema: /.mattrbld/schemas/documentation.json
 ---
 ## Issue
 
-!\[\](/00-09 Meta/09 Source/imgs/losing-my-mind-insane.gif)
+![](/00-09 Meta/09 Source/imgs/losing-my-mind-insane.gif)
 
-!\[\](/00-09 Meta/09 Source/imgs/vard-dawg-the-datavard-aardvark-1.png)
+![](/00-09 Meta/09 Source/imgs/vard-dawg-the-datavard-aardvark-1.png)
 
 When attempting to clone the template VM, it fails with something like:
 
-\[\[Another Document\]\]
+[[Another Document]]
 
 ```
 create full clone of drive scsi0 (iscsi-lvm:vm-105-disk-0) device-mapper: create ioctl on iscsi-vm--122--disk--0 failed: Device or resource busy
