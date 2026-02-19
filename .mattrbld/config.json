@@ -5,23 +5,6 @@
   "name": "test-docs",
   "sidebar": [
     {
-      "label": "The sidebar has not yet been configured for this project"
-    },
-    {
-      "icon": "wrench-and-driver",
-      "label": "Configure now",
-      "target": {
-        "name": "Project.Settings",
-        "query": {
-          "tab": "sidebar"
-        }
-      },
-      "onlyPrivileged": true
-    },
-    {
-      "separator": true
-    },
-    {
       "label": "Dashboard",
       "icon": "grid",
       "target": {
@@ -38,16 +21,6 @@
       "protected": true
     },
     {
-      "icon": null,
-      "label": "test collection",
-      "target": {
-        "name": "Project.Collection",
-        "params": {
-          "path": "/.mattrbld/collections/test-collection.json"
-        }
-      }
-    },
-    {
       "label": "Settings",
       "icon": "settings",
       "target": {
@@ -57,8 +30,23 @@
       "protected": true
     },
     {
+      "icon": null,
+      "label": "Collections",
+      "target": null
+    },
+    {
       "separator": true,
       "target": null
+    },
+    {
+      "icon": null,
+      "label": "test collection",
+      "target": {
+        "name": "Project.Collection",
+        "params": {
+          "path": "/.mattrbld/collections/test-collection.json"
+        }
+      }
     }
   ],
   "slugifyOptions": {
